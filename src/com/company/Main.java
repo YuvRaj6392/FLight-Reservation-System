@@ -5,13 +5,7 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        TouristTicket tt1=new TouristTicket("05512507548","Mumbai","Goa","7","11","55","Samosa",2000,false,"shivoy");
-        tt1.setSelectedTouristLocation(new String[]{"city","manu","psg","stefano","munich"});
-        tt1.removeTouristLocation("city");
-        tt1.addTouristLocation("old trafford");
-        tt1.addTouristLocation("jj");
-        System.out.println(Arrays.toString(tt1.getSelectedTouristLocation()));
-        System.out.println(tt1.checkStatus());
+
         Address a1=new Address("KK","Gorakhpur","Uttar Pradesh");
         System.out.println(a1.getAddressDetails());
         a1.updateAddressDetails(a1.street);
@@ -34,6 +28,12 @@ public class Main {
         System.out.println(rt1.checkStatus());
             rt1.cancel();
         System.out.println(rt1.checkStatus());
+        TouristTicket tt1=new TouristTicket("05512507548","Mumbai","Goa","7","11","55","Samosa",2000,false,"shivoy");
+        tt1.setSelectedTouristLocation(new String[]{"city","manu","psg","stefano","munich"});
+        tt1.removeTouristLocation("city");
+        tt1.addTouristLocation("old trafford");
+        System.out.println(Arrays.toString(tt1.getSelectedTouristLocation()));
+        System.out.println(tt1.checkStatus());
 
     }
 }
