@@ -5,10 +5,10 @@ import java.time.LocalDateTime;
 public class TouristTicket extends Ticket{
     private String hotelAddress;
   private  String[] selectedTouristLocation=new String[5];
-  public TouristTicket(String pnr, String from, String to, String departureDateTime, String arrivalDateTime, String seatNo, String specialServices, float price, boolean cancelled, String hotelAddress, Flight flight, Passenger passenger) {
+  public TouristTicket(String pnr, String from, String to, String departureDateTime, String arrivalDateTime, String seatNo,float price, boolean cancelled, String hotelAddress, Flight flight, Passenger passenger,String[] selectedTouristLocation) {
       super(pnr,from,to,departureDateTime,arrivalDateTime,seatNo,price,cancelled,flight,passenger);
       this.hotelAddress=hotelAddress;
-
+      this.selectedTouristLocation=selectedTouristLocation;
     }
 
     public void setHotelAddress(String hotelAddress) {

@@ -7,9 +7,6 @@ public class Passenger {
     private static int  idCounter=0;
     Address address;
     Contact contact;
-    public Passenger(int id) {
-        this.id = id;
-    }
 
     public int getId() {
         return id;

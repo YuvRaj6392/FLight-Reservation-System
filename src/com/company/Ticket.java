@@ -109,6 +109,7 @@ public abstract class Ticket {
     }
 
     public Flight getFlight() {
+
         return flight;
     }
 
